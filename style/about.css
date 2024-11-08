@@ -61,7 +61,8 @@ section {
     flex-grow: 1;
     overflow: hidden; 
 }
-.h2 {
+
+h2 {
     display: flex;
     text-align: center;
 }
