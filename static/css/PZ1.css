@@ -4,12 +4,15 @@ body {
     color: #ddd;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     background-color: #333;
     color: white;
-    padding: 15px; 
+    padding: 15px;
     text-align: center;
 }
 
@@ -17,7 +20,6 @@ header h1 {
     margin: 0;
     font-size: 1.8em; 
 }
-
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -26,46 +28,37 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px; 
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #ddd;
     text-decoration: none;
-    font-size: 1em; 
     transition: color 0.3s;
 }
 
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #ddd;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+
 section {
-    max-width: 800px; 
+    max-width: 800px;
     margin: 20px auto;
-    padding: 15px; 
+    padding: 15px;
     background-color: #222;
     border-radius: 8px;
-}
-
-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-section ul li {
-    background-color: #333;
-    padding: 8px;
-    margin: 8px 0; 
-    border-radius: 6px;
-    transition: background-color 0.3s;
-}
-
-section ul li a {
-    color: #ddd;
-    text-decoration: none;
-    font-size: 1em; 
-}
-
-
-section ul li a:hover {
-    color: white;
 }
 
 table {
@@ -93,3 +86,5 @@ td {
 tr:nth-child(even) td {
     background-color: #2a2a2a;
 }
+
+
