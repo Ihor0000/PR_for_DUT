@@ -61,6 +61,9 @@ section {
     flex-grow: 1;
     overflow: hidden; 
 }
+.h2 {
+    text-align: center;
+}
 
 .profile-layout {
     display: flex;
