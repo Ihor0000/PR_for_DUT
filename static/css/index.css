@@ -1,26 +1,29 @@
-/* Загальні стилі */
+/* Загальні стилі для body */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121212;
     color: #ddd;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: hidden;  /* Забороняє вертикальну прокрутку */
 }
 
-/* Заголовок */
+/* Заголовок та навігація */
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 1.8em;
 }
 
-/* Меню навігації */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -29,13 +32,13 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #ddd;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
     transition: color 0.3s;
 }
 
@@ -43,54 +46,36 @@ nav ul li a:hover {
     color: #f0a500;
 }
 
-/* Основний контент */
-.main-content {
-    max-width: 900px;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Карточки */
-.card {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 8px;
-    color: #b0b0b0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.card h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    color: #ddd;
-}
-
-.card p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-/* Футер */
 footer {
     text-align: center;
     background-color: #333;
     color: #ddd;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 15px;
-    margin-top: 30px;
+    background-color: #222;
+    border-radius: 8px;
+    flex-grow: 1;
+    overflow: hidden; 
 }
 
-footer p {
-    margin: 5px;
+.card {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px;
 }
 
-footer a {
-    color: #f0a500;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+.card p {
+    font-size: 1em;
+    color: #bbb;
 }

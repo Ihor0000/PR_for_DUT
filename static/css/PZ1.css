@@ -36,21 +36,6 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #f0a500;
-}
-
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #ddd;
-    margin-top: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.8em;
-}
-
 section {
     max-width: 800px; 
     margin: 20px auto;
@@ -66,7 +51,7 @@ section ul {
 
 section ul li {
     background-color: #333;
-    padding: 8px; 
+    padding: 8px;
     margin: 8px 0; 
     border-radius: 6px;
     transition: background-color 0.3s;
@@ -78,10 +63,33 @@ section ul li a {
     font-size: 1em; 
 }
 
-section ul li:hover {
-    background-color: #f0a500;
-}
 
 section ul li a:hover {
     color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td {
+    background-color: #222;
+    color: #ddd;
+}
+
+tr:nth-child(even) td {
+    background-color: #2a2a2a;
 }
